@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head><meta charset="UTF-8"><title>Санаттар</title>
+<link rel="stylesheet" href="/css/style.css"></head>
+<body>
+  <header><h1>📂 Санаттар</h1></header>
+  <main>
+    <div class="recipe-grid">
+      <% categories.forEach(cat => { %>
+        <div class="recipe-card"><h2><%= cat %></h2></div>
+      <% }) %>
+    </div>
+  </main>
+</body>
+</html>

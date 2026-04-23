@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head><meta charset="UTF-8"><title>Ас үй рецептері</title>
+<link rel="stylesheet" href="/css/style.css"></head>
+<body>
+  <header>
+    <h1>🍳 Ас үй рецептері</h1>
+    <nav>
+      <a href="/">Басты бет</a>
+      <a href="/add">Рецепт қосу</a>
+      <% if (user) { %><a href="/auth/logout">Шығу</a><% } %>
+    </nav>
+  </header>
+  <main>
+    <div class="recipe-grid">
+      <% recipes.forEach(recipe => { %>
+        <div class="recipe-card">
+          <h2><%= recipe.title %></h2>
+          <span class="category"><%= recipe.category %></span>
+          <p>⏱ <%= recipe.cookingTime %> минут</p>
+        </div>
+      <% }) %>
+    </div>
+  </main>
+</body>
+</html>
+<!-- views ready -->

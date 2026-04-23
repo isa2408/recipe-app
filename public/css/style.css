@@ -1,0 +1,13 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: sans-serif; background: #fdf6ec; color: #333; }
+header { background: #e67e22; color: white; padding: 1rem 2rem; }
+nav a { color: white; margin-left: 1rem; text-decoration: none; }
+main { padding: 2rem; }
+.recipe-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px,1fr)); gap: 1.5rem; }
+.recipe-card { background: white; border-radius: 8px; padding: 1.5rem; box-shadow: 0 2px 8px rgba(0,0,0,.1); }
+.recipe-card h2 { color: #e67e22; }
+.category { background: #ffeaa7; padding: 2px 8px; border-radius: 12px; font-size: .85rem; }
+form { max-width: 500px; display: flex; flex-direction: column; gap: 1rem; }
+input, textarea { padding: .75rem; border: 1px solid #ddd; border-radius: 6px; font-size: 1rem; }
+button { background: #e67e22; color: white; padding: .75rem; border: none; border-radius: 6px; cursor: pointer; }
+/* styles ready */

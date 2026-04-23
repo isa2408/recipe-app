@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head><meta charset="UTF-8"><title>Іздеу</title>
+<link rel="stylesheet" href="/css/style.css"></head>
+<body>
+  <header><h1>🔍 "<%= query %>" — нәтижелер</h1></header>
+  <main>
+    <% if (recipes.length === 0) { %><p>Рецепт табылмады</p>
+    <% } else { %>
+      <div class="recipe-grid">
+        <% recipes.forEach(r => { %>
+          <div class="recipe-card"><h2><%= r.title %></h2></div>
+        <% }) %>
+      </div>
+    <% } %>
+  </main>
+</body>
+</html>

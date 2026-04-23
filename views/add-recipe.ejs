@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head><meta charset="UTF-8"><title>Рецепт қосу</title>
+<link rel="stylesheet" href="/css/style.css"></head>
+<body>
+  <header><h1>➕ Рецепт қосу</h1></header>
+  <main>
+    <form action="/add" method="POST">
+      <label>Атауы<input type="text" name="title" required></label>
+      <label>Санат
+        <select name="category">
+          <option>Ет тағамдары</option>
+          <option>Сорпалар</option>
+          <option>Салаттар</option>
+          <option>Тәттілер</option>
+        </select>
+      </label>
+      <label>Ингредиенттер<textarea name="ingredients"></textarea></label>
+      <label>Дайындау жолы<textarea name="instructions" required></textarea></label>
+      <label>Уақыт (мин)<input type="number" name="cookingTime"></label>
+      <button type="submit">💾 Сақтау</button>
+    </form>
+  </main>
+</body>
+</html>

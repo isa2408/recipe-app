@@ -20,7 +20,7 @@ npm run dev
 ```
 
 ## Орта айнымалылары (.env)
-```
+```bash
 PORT=3000
 MONGODB_URI=mongodb://localhost:27017/recipe-app
 SESSION_SECRET=your-secret-key
